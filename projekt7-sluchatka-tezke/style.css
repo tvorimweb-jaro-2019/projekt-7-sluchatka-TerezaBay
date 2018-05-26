@@ -1,0 +1,45 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+/*
+Písmo pro běžný text:
+font-family: 'Open Sans', sans-serif;
+font-size: 15px+
+line-height: 1.5;
+
+Písmo pro menší nadpisy (kromě velkého h1):
+font-family: 'Rubik', sans-serif;
+font-weight: 700;
+
+
+Modra barva tlačítka:
+background-color: #3498db;
+
+Tlačítko při najetí myší:
+background-color: #2b80b9;
+*/
+
+/* -------------------------------------------------- */
+
+
+body {
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5; /* proklad mezi radky */
+}
+
+
+/* vychozi barva pro odkaz */
+a {
+	color: #3498db;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #2b80b9;
+}
