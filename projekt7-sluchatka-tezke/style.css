@@ -32,14 +32,340 @@ body {
     line-height: 1.5; /* proklad mezi radky */
 }
 
-
 /* vychozi barva pro odkaz */
 a {
 	color: #3498db;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover, a:focus, a:active {
 	color: #2b80b9;
+}
+
+/* GRAFIKA - hlavička------------------------------------------------------ */
+
+.logo img {
+	width: 120px;
+	margin: 0px;
+	margin: 10px 0px 15px;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a, .tlacitko a {
+	display: block;
+	padding: 10px 12px;
+	text-decoration: none;
+	font-size: 13px;
+	text-align: center;
+}
+
+.menu1 a {
+	text-transform: uppercase;
+	color: #959595;
+}
+
+.tlacitko a {
+	font-weight: 600;
+	text-decoration: none;
+	color: white;
+	background-color: #3498db;
+	border-radius: 5px;
+}
+
+.tlacitko a:hover, .tlacitko a:focus {
+	background-color: #2b80b9;
+}
+
+.menu-tlacitko a {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-tlacitko-2 a {
+	color: #5a5a5a;
+	background-color: #f5f5f5;
+	border: 0.5px solid #5a5a5a;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-tlacitko-2 a:hover, .menu-tlacitko-2 a:focus {
+	color: white;
+	background-color: rgb(216, 78, 142);
+	border: 0.5px solid white;
+}
+
+/* GRAFIKA - obsah------------------------------------------------------ */
+
+.grafika {
+	background-color: #f5f5f5;
+	padding: 15px 25px 0px;
+}
+
+.grafika-text h1 {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 45px 0px 35px;
+	text-align: center;
+}
+
+.grafika-text .perex {
+	font-size: 16px;
+	color: #a5a5a5;
+	text-align: center;
+}
+
+.grafika-tlacitko a {
+	font-size: 16px;
+	padding: 18px 18px;
+	margin: 30px 0px;
+}
+
+.grafika-text .odkaz {
+	font-size: 13px;
+}
+
+.grafika .slecna {
+	max-width: 100%;
+	display: block;
+	margin-top: 25px;
+}
+
+/* POPIS-BOXY------------------------------------------------------------------ */
+
+.popis {
+	padding: 0px 25px;
+}
+
+.popis-box {
+	border: 0.5px solid #a5a5a5;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.popis-box h2 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.popis-box img {
+	height: 50px;
+	width: 50px;
+}
+
+.popis-text p {
+	color: #5a5a5a;
+	margin-top: 20px;
+}
+
+.popis-text a {
+	font-size: 13px;
+}
+
+/* PATIČKA------------------------------------------------------------------ */
+
+.paticka {
+	background-color: #252525;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.copy {
+	font-size: 13px;
+	padding: 10px;
+	color: #959595;
+	order: 1;
+}
+
+.menu2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.menu2 a {
+	color: white;
+}
+
+/* MEDIA QUERY--------------------------------------------------------------- */
+
+/* TABLET */
+@media Screen and (min-width: 480px) {
+
+	.menu1 {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	.menu-tlacitko {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+
+	.menu-tlacitko p {
+		margin: 5px;
+	}
+
+	.menu-tlacitko a {
+		width: 100%;
+	}
+
+	.grafika-text h1 {
+		font-size: 40px;
+	}
+
+	.grafika-text .perex {
+		text-align: left;
+	}
+
+	.grafika-text .odkaz {
+		text-align: center;
+	}
+
+	.grafika-tlacitko a {
+		padding: 20px 20px;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.popis-box {
+		display: flex;
+		text-align: left;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.popis-box img {
+		margin-right: 25px;
+	}
+
+	.paticka .menu2 {
+		display: flex;
+	}
+}
+
+/* PC */
+
+@media Screen and (min-width: 768px) {
+	
+	.hlavicka {
+		display: flex;
+		margin: 50px 0px 50px;
+		justify-content: space-between;
+	}
+
+	.hlavicka-menu {
+		display: flex;
+	}
+
+	.logo img {
+		margin: 0;
+	}
+
+	.menu-tlacitko p {
+		margin: 1px;
+	}
+
+	.grafika-pozadi {
+		background-color: #f5f5f5;
+	}
+
+	.grafika {
+		position: relative;
+		min-height: 600px;
+		max-width: 1140px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.grafika-text {
+		max-width: 420px;
+	}
+
+	.grafika-text h1 {
+		font-size: 44px;
+		text-align: left;
+	}
+
+	.grafika-text .odkaz {
+		text-align: left;
+	}
+
+	.grafika-tlacitko a {
+		width: 50%;
+		display: inline-block;
+		margin: 30px 0px 5px;
+	}
+
+	.grafika .slecna {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		max-width: 65%;
+		max-height: 80%;
+	}
+
+	.popis {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1140px;
+		margin: 50px auto 20px;
+		padding: 0px 25px;
+	}
+	
+	.popis-box {
+		padding: 30px;
+		width: calc( (100% - 30px) / 2);
+		margin: 0px 0px 30px 0px;
+		align-items: flex-start;
+	}
+
+	.popis-box img {
+		margin-right: 30px;
+	}
+	
+	.popis-box h2 {
+		margin-top: 0px;
+	}
+
+	.paticka-pozadi {
+		background-color: #252525;
+	}
+	
+	.paticka {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 50px 25px;
+		max-width: 1140px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.menu2 {
+		padding: 0px;
+	}
+	
+	.copy {
+		order: -1;
+		padding: 0px;
+		margin: 0px;
+	}
 }
